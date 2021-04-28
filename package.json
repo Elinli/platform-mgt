@@ -1,43 +1,47 @@
 {
-    "name": "plat-login",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-        "serve": "vue-cli-service serve",
-        "build": "vue-cli-service build"
-    },
-    "dependencies": {
-        "axios": "^0.21.1",
-        "babel-polyfill": "^6.26.0",
-        "core-js": "^3.6.5",
-        "lodash-es": "^4.17.21",
-        "register-service-worker": "^1.7.1",
-        "terser-webpack-plugin": "^2.3.8",
-        "vue": "^3.0.0",
-        "vue-router": "^4.0.0-0",
-        "vuex": "^4.0.0-0"
-    },
-    "devDependencies": {
-        "@vue/cli-plugin-babel": "~4.5.0",
-        "@vue/cli-plugin-pwa": "~4.5.0",
-        "@vue/cli-plugin-router": "~4.5.0",
-        "@vue/cli-plugin-vuex": "~4.5.0",
-        "@vue/cli-service": "~4.5.0",
-        "@vue/compiler-sfc": "^3.0.0",
-        "compression-webpack-plugin": "^5.0.1",
-        "eslint": "^6.7.2",
-        "eslint-plugin-import": "^2.20.2",
-        "eslint-plugin-node": "^11.1.0",
-        "eslint-plugin-promise": "^4.2.1",
-        "eslint-plugin-standard": "^4.0.0",
-        "eslint-plugin-vue": "^6.2.2",
-        "less": "^3.0.4",
-        "less-loader": "^5.0.0"
-    },
-    "browserslist": [
-        "> 1%",
-        "last 2 versions",
-        "not dead"
-    ],
-    "openGzip": true
+  "name": "platform-mgt",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "i": "rimraf node_modules&&npm install --registry=https://registry.npmjs.org/&&npm i",
+    "clear": "rimraf node_modules&&npm install --registry=https://registry.npmjs.org/",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.6.5",
+    "lodash-es": "^4.17.21",
+    "register-service-worker": "^1.7.1",
+    "terser-webpack-plugin": "^2.3.8",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-pwa": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "compression-webpack-plugin": "^5.0.1",
+    "eslint": "^7.18.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.5.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "less": "^4.1.0",
+    "less-loader": "^7.3.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "openGzip": true
 }

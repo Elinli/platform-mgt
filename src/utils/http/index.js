@@ -1,4 +1,3 @@
-import { AxiosRequestConfig, AxiosResponse } from 'axios';
 import { deepMerge } from '../deep';
 import { EAxios, errorResult } from './request';
 import { isString } from '../is';
@@ -37,6 +36,7 @@ const transform = {
         return Promise.reject(error);
     },
     responseInterceptorsCatch: (error) => {
+        console.log(error);
         return Promise.reject(error);
     },
     requestInterceptors: (config, options) => {
