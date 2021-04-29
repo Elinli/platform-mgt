@@ -7,13 +7,14 @@ module.exports = {
   publicPath: '/',
   assetsDir: 'static',
   outputDir: 'dist',
-  lintOnSave: 'error',
+  lintOnSave: true,
   transpileDependencies: ['biyi-admin'],
   productionSourceMap: false,
   devServer: {
-    open: false,
+    open: true,
     host: '0.0.0.0',
     port: 8080,
+    hot: true,
     https: false,
     disableHostCheck: true,
     overlay: {

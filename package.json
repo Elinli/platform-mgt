@@ -5,9 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "i": "rimraf node_modules&&npm install --registry=https://registry.npmjs.org/&&npm i",
-    "clear": "rimraf node_modules&&npm install --registry=https://registry.npmjs.org/",
-    "lint": "vue-cli-service lint"
+    "ins": "rimraf node_modules&&npm install --registry=https://registry.npmjs.org/&&npm i",
+    "clear": "rimraf node_modules&&npm install --registry=https://registry.npmjs.org/"
   },
   "dependencies": {
     "axios": "^0.21.1",
